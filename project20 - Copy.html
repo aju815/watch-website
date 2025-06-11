@@ -1,0 +1,570 @@
+<DOCTYPE html>
+    <html lang="en">
+    <head>
+      
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/bootstrap.css.map">
+        <script src="js/bootstrap.js"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Icon Font Stylesheet -->
+         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+        <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+        <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <!-- Bootstrap CSS -->
+       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+       <link rel="stylesheet" href="styles.css">
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <!-- Bootstrap CSS -->
+       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+       <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  
+       <style>
+       /* Make the image fully responsive */
+          .carousel-inner img {
+             width: 100%;
+             height: 450px;
+        }
+        .mySlides {display:none;
+            margin: 5px;
+            min-height: 350px;
+            min-width: 100%;
+          }
+          .but1{
+            border: none;
+            color: white;
+            background-color: gray;
+            float: right;
+            border-radius: 30px;
+            width: 150px;
+            margin-right:120px ;
+          }
+          .service-card {
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+    .service-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+    }
+    .service-icon {
+      font-size: 50px;
+      color: gold;
+    }
+    /* General body styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+/* Container for background image */
+.background-container {
+  position: relative;
+  height: 100vh; 
+  background-image: url(rolex10.jpg); 
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  
+}
+
+
+.background-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+}
+
+
+.text-area {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  color: white;
+  text-align: center;
+  padding: 20px;
+  max-width: 90%; /* Limit width */
+  background: rgba(0, 0, 0, 0.6); 
+  border-radius: 10px;
+}
+
+.text-area h1 {
+  font-size: 3rem;
+  margin: 0;
+  font-weight: bold;
+}
+
+.text-area p {
+  
+  line-height: 1.5;
+  margin-top: 10px;
+} 
+ 
+
+    .product-card {
+      background: #fff;
+      border-radius: 15px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      width: 300px;
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .product-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 12px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .product-image {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+
+    .product-card:hover .product-image {
+      transform: scale(1.1);
+    }
+
+    .product-info {
+      padding: 20px;
+      text-align: center;
+    }
+
+    .product-info h3 {
+      font-size: 1.4rem;
+      color:silver;
+      margin-bottom: 10px;
+      font-weight: 500;
+    }
+
+    .product-info p {
+      font-size: 1rem;
+      color: #777;
+      margin-bottom: 15px;
+      line-height: 1.4;
+    }
+
+    .price {
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: #28a745;
+      margin-bottom: 20px;
+    }
+
+    .btn {
+      background-color: #28a745;
+      color: white;
+      padding: 10px 20px;
+      font-size: 1rem;
+      border-radius: 25px;
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #218838;
+    }
+
+    /* Responsive Styles */
+    @media (max-width: 768px) {
+      .product-card {
+        width: 90%;
+      }
+    }
+    .product-button {
+      background-color: #28a745; /* Green color */
+      color: white;
+      padding: 12px 24px;
+      border-radius: 50px;
+      font-size: 16px;
+      font-weight: bold;
+      border: none;
+      text-transform: uppercase;
+      transition: all 0.3s ease-in-out;
+      text-align: center;
+    }
+
+    .product-button:hover {
+      background-color: #218838; /* Darker green on hover */
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      transform: translateY(-2px);
+    }
+
+    .product-button:active {
+      background-color: #1e7e34;
+      transform: translateY(1px);
+      box-shadow: none;
+    }
+  </style>
+        </head>
+        <body style="background-color: whitesmoke;">
+            <!-- Navbar with floated logo -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
+    <div class="container-fluid">
+      <!-- Logo floated left -->
+      <a class="navbar-brand float-start" href="#">
+        <img src="plogo1.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
+        ROLEX
+      </a>
+      <!-- Navbar Toggler for Mobile View -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Navbar Links -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="project20.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="project20a.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="project20b.html">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="project20d.html">Products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="project20e.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+ 
+
+    <div id="demo" class="carousel slide" data-ride="carousel">
+
+                    <!-- Indicators -->
+                    <ul class="carousel-indicators">
+                      <li data-target="#demo" data-slide-to="0" class="active"></li>
+                      <li data-target="#demo" data-slide-to="1"></li>
+                      <li data-target="#demo" data-slide-to="2"></li>
+                    </ul>
+                    
+                    <!-- The slideshow -->
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="rolex1.jpg" alt="Los Angeles" width="1100" height="500">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="rolex2.jpg" alt="Chicago" width="1100" height="500">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="rolex9.jpg" alt="New York" width="1100" height="500">
+                      </div>
+                    </div>
+                  
+                    <!-- Left and right controls -->
+                    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                      <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#demo" data-slide="next">
+                      <span class="carousel-control-next-icon"></span>
+                    </a>
+                  </div>
+                   <!-- Bootstrap JS and dependencies -->
+                 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+                 <div class="row" style="margin: 15px;">
+                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                      <div class="w3-content w3-section" style="max-width:100%">
+                        <img class="mySlides" src="rolex4.webp" style="width:100%">
+                        <img class="mySlides" src="rolex6.webp" style="width:100%">
+                        <img class="mySlides" src="rolex7.webp" style="width:100%">
+                        <img class="mySlides" src="rolex8.jpg" style="width:100%">
+                      </div>
+                      </div>
+                      
+                      
+                
+                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                        <h2 style="color: gold">ROLEX</h2>
+                        <h4 style="color:gray">WATCH QUALITY</h4>
+                        <p style="font-size: 15px; font-weight: bold;"><span style="color: gold; font-size: 20px;">Rolex</span> is an integrated and independent swiss watch manufacuture.Headquartered in Geneva it is recognized for its expertise and the quality of its products.</P>
+                        <p>Hans wilsdorf founder of the company,Instilled a nation of perpetual excellence,leading to mojor watchmaking innovations such as the oyster the first waterproofwristwatch and the perpetual roter self-winding machanism.The brand design,develops and produces the majority of its watch componets in-house.Rolex also supports the arts and culture,sports,exploration ,and those who are devising solutions to preserve the plants.It is a committed and responsible company.
+                            Whose products are made to last in its quest for excellence.Rolex strive each day to improve not only its watches but also its environmental performance and its impact on society.
+                        </p>
+                        <p>Rolex watch Co.Ltd.in 1915.After<span style="color: blue;">World War</span> the company moved its base of operation to Geneva because of the unfavorable economy in the united Kingdom in 1920 Hans wilsdorf registered montres Rolex SA in Geneva as the new company name (montre is french for watch)it later became Rolex SA Since1960 the company has been owned by the<span style="color: blue;">Hans Wilsdorf Foundation</span> a private family trust.</p>
+                        <p>Rolex SA and its subsidiary Montres Tudor SA design make distribute and Service wristwatche sold under the Rolex and Tudor brands In 2023,Rolex agreed to acquir its longtime retail partner Bucherer and in 2024,Rolex began construction of a new <span style="color:blue ;">headquarters</span>on <span style="color: blue;">Fifth Avenue</span>in<span style="color:blue ;">Midtown Manhattan New York City</span>near<span style="color: blue;">Billionaires Row</span></p>
+                    </div>
+                    </div>
+                    
+                    
+                     <!-- Header Section -->
+  <header class="bg-secondary text-white text-center py-5">
+    <h1>Our Services</h1>
+    <p>Rolex only uses the highest qulity materials in its watches,and never cuts any corners in manufacuturing.</p>
+  </header>
+
+  <!-- Services Section -->
+  <section class="container py-5">
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <!-- Service 1 -->
+      <div class="col">
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="bi bi-brush"></i>
+          </div>
+          <h3 class="mt-3">Watch Designs</h3>
+          <p>Rolex timepieces are the most reputable and renowed timpieces inthe world today.Timeless elegance and prestige among all luxury watches.</p>
+        </div>
+      </div>
+
+      <!-- Service 2 -->
+      <div class="col">
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="bi bi-code-slash"></i>
+          </div>
+          <h3 class="mt-3">Watch Quality</h3>
+          <p>Rolex watches are renowed for their exceptional quality,Consistently delivering high precision robust construction and meticulous craftmanship</p>
+        </div>
+      </div>
+
+      <!-- Service 3 -->
+      <div class="col">
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="bi bi-graph-up-arrow"></i>
+          </div>
+          <h3 class="mt-3"> Watch Marketing</h3>
+          <p>Rolex's marketing strategy combines traditional and digital marketing to position itself as a luxury watch brand.Rolex positions itself as a symbol of prestige.</p>
+        </div>
+      </div>
+
+      <!-- Service 4 -->
+      <div class="col">
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="bi bi-people-fill"></i>
+          </div>
+          <h3 class="mt-3">Customer service</h3>
+          <p>Rolex the watch is completely dismantled and all of its components ar ultrasonically cleaned.Each individual components its closely examined.</p>
+        </div>
+      </div>
+
+      <!-- Service 5 -->
+      <div class="col">
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="bi bi-shield-lock"></i>
+          </div>
+          <h3 class="mt-3">Company Service</h3>
+          <p>Rolex SA and its subsidiary montes tudor SA design make distribute and service wristwatch sold under the Rolex and Tudor brands.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="container">
+  <div class="background-container">
+    <div class="text-area col-sm-12 col-md-12 col-lg-12 col-xl-12">
+      <h1>A guarantee of quality and durability</h1>
+      <p>The quality of a Rolex Watch is based on its expceptional reliabillity and roubustness.From the Outset the company's Watchmarkers,engineers and later its scientists fostered a culture of innovation and unique expertise in the design and manufacturing of timepieces</p>
+      <p>Rolex has field more than 600 patents in the course of its history and continues to constantly push back the boundaries of the art of watchmaking.Rolex watches are expceptional.They are designed to function perfectly tody tomorrow and into the future.</p>
+      <p>The brand has only ever been committed to creating requirements for reliabillity and durabillity taking precedence during the development of each timpiece from the various manufacuturing steps,to the time the watch leaves the workshops and when taken for servicing.</p>
+    </div>
+  </div>
+  </div>
+  <div>
+    <h2 style="color: gold; text-align: center; margin-top: 20px;">WATCH DESIGNS</h2>
+  </div>
+  <div class="container">
+    <div class="row" style="margin-top: 35px;">
+      <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4">
+  <div class="product-card">
+    <img src="rolex11.avif" alt="Product Image" class="product-image">
+    <div class="product-info">
+      <h3>Chain Design</h3>
+      <p>The Rolex coolection offers a wide range of prestigious high-precision timepieces from professional to classic models to suit any wrist.</p>
+      <div class="price">$1000.00 USD</div>
+      
+    </div>
+  </div>
+  </div>
+  <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4">
+    <div class="product-card">
+      <img src="rolex12.jpg" alt="Product Image" class="product-image">
+      <div class="product-info">
+        <h3>Chain Design</h3>
+        <p>Featuring rows of five metal links it is known for its fluid constours and elegant clasp,which bring further distinction to the maodel in 1999 .</p>
+        <div class="price">$1500.00 USD</div>
+        
+      </div>
+    </div>
+    </div>
+    <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4">
+      <div class="product-card">
+        <img src="rolex13.jpg" alt="Product Image" class="product-image">
+        <div class="product-info">
+          <h3>Chain Design</h3>
+          <p>Regular new releases of the date just mean this watchmaking icon is constantly reinenting itself with its varied reinerpretations it expresses.</p>
+          <div class="price">$2000.00 USD</div>
+          
+        </div>
+      </div>
+      </div>
+  </div>
+  <div class="row" style="margin-top: 35px;">
+    <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4">
+<div class="product-card">
+  <img src="rolex14.jpg" alt="Product Image" class="product-image">
+  <div class="product-info">
+    <h3>Ladies Design</h3>
+    <p>In the wake of this breakthrough in 1957 the brand unvelied a chronometer specially designed for women,a watch with certifed.</p>
+    <div class="price">$1500.00 USD</div>
+    
+  </div>
+</div>
+</div>
+<div class="col-sm-4 col-md-4 col-lg-4 col-xl-4">
+  <div class="product-card">
+    <img src="rolex15.jpg" alt="Product Image" class="product-image">
+    <div class="product-info">
+      <h3>Ladies Design</h3>
+      <p>Since its inception,Rolex has always shown great ambition.In the early part of the 20th century.it belived wristwatches should benifit.</p>
+      <div class="price">$1850.00 USD</div>
+      
+    </div>
+  </div>
+  </div>
+  <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4">
+    <div class="product-card">
+      <img src="rolex16.avif" alt="Product Image" class="product-image">
+      <div class="product-info">
+        <h3>Ladies Design</h3>
+        <p>Ladies want the best of both world a tiny wtch and an accurate movement yet the smaller the watch the more difficult it is to make it.</p>
+        <div class="price">$2100.00 USD</div>
+        
+      </div>
+    </div>
+    </div>
+</div>
+
+  </div> 
+  <div class="container mt-5">
+    <a href="project20d.html"><button class="product-button">Buy Now</button></a>
+  </div>
+   <!-- Footer -->
+   <footer class="bg-dark text-white py-4">
+    <div class="container">
+        <div class="row">
+            <!-- Left side: Logo and contact info -->
+            <div class="col-md-4">
+
+                <img src="plogo1.png" height="50px" width="60px">
+                
+              
+                <h4>Rolex</h4>
+                
+                <p>123,NM Wadia Buliding,1st Floor,MG Road Fountain,Mumbai 400001</p>
+                <p>Email: privacy@rolex.com</p>
+                <p>Phone: +44 20 7024 7300</p>
+            </div>
+
+            <!-- Center: Quick Links & Social Media -->
+            <div class="col-md-4">
+                <h5>Quick Links</h5>
+                <ul class="list-unstyled">
+                    <li><a href="project20a.html" class="text-white">About Us</a></li>
+                    <li><a href="#" class="text-white">Services</a></li>
+                    <li><a href="#" class="text-white">Blog</a></li>
+                    <li><a href="#" class="text-white">Privacy Policy</a></li>
+                </ul>
+                <h5>Follow Us</h5>
+                <ul class="list-unstyled d-flex">
+                    <li><a href="#" class="text-white me-3"><i class="bi bi-facebook"></i> Facebook</a></li>
+                    <li><a href="#" class="text-white me-3"><i class="bi bi-twitter"></i> Twitter</a></li>
+                    <li><a href="#" class="text-white me-3"><i class="bi bi-instagram"></i> Instagram</a></li>
+                </ul>
+            </div>
+
+            <!-- Right side: Newsletter Signup -->
+            <div class="col-md-4">
+                <h5>Subscribe to our Newsletter</h5>
+                <form>
+                    <div class="mb-3">
+                        <input type="email" class="form-control" placeholder="Enter your email">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+
+        <hr class="border-top border-light">
+        
+        <!-- Bottom legal info -->
+        <div class="row text-center">
+            <div class="col">
+                <p>&copy; 1905 ROLEX. All rights reserved.</p>
+                <p><a href="#" class="text-white">Terms & Conditions</a> | <a href="#" class="text-white">Privacy Policy</a></p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Bootstrap JS and Icons link -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+
+  <!-- Bootstrap JS and Popper.js -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.0/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Bootstrap Icons (for icons) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+                    <script>
+                        var myIndex = 0;
+                        carousel();
+                        
+                        function carousel() {
+                          var i;
+                          var x = document.getElementsByClassName("mySlides");
+                          for (i = 0; i < x.length; i++) {
+                            x[i].style.display = "none";  
+                          }
+                          myIndex++;
+                          if (myIndex > x.length) {myIndex = 1}    
+                          x[myIndex-1].style.display = "block";  
+                          setTimeout(carousel, 2000); // Change image every 3 seconds
+                        }
+                        </script>
+        </body>
+        </html>

@@ -1,0 +1,350 @@
+<DOCTYPE html>
+    <html lang="en">
+    <head>
+      
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/bootstrap.css.map">
+        <script src="js/bootstrap.js"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Icon Font Stylesheet -->
+         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+        <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Customer Service</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+        <style>
+          /* Hero Section */
+          .hero-section {
+            background-image: url('https://via.placeholder.com/1500x800'); 
+            background-size: cover;
+            background-position: center;
+            height: 60vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            position: relative;
+          }
+          .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background:gray;
+            z-index: 1;
+          }
+          .hero-content {
+            z-index: 2;
+          }
+      
+          a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+button, .cta-button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+}
+
+button:hover, .cta-button:hover {
+  background-color: #0056b3;
+}
+
+
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+  background: #007bff;
+  color: white;
+}
+
+.hero h1 {
+ 
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+/* About Section */
+.about {
+  padding: 60px 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.about h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.about p {
+  font-size: 18px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Features Section */
+.features {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.features h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+.features .feature {
+  margin-bottom: 30px;
+}
+
+.features h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.features p {
+  font-size: 16px;
+}
+
+/* Benefits Section */
+.benefits {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #fff;
+}
+
+.benefits h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.benefits ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.benefits li {
+  font-size: 18px;
+  margin: 10px 20px;
+  width: 200px;
+  text-align: justify;
+  word-spacing: -3px ;
+}
+
+/* Testimonials Section */
+.testimonials {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.testimonials h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.testimonials blockquote {
+  font-size: 18px;
+  margin: 20px auto;
+  max-width: 800px;
+  font-style: italic;
+}
+
+/* Pricing Section */
+.pricing {
+  padding: 60px 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.pricing h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+.pricing-plan {
+  display: inline-block;
+  width: 30%;
+  padding: 30px;
+  background-color: #f4f4f4;
+  margin: 10px;
+  text-align: center;
+}
+
+.pricing-plan h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.pricing-plan p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.pricing-plan ul {
+  margin-bottom: 20px;
+}
+
+.pricing-plan .cta-button {
+  display: inline-block;
+  background-color: #007bff;
+  padding: 10px 20px;
+  color: white;
+  text-align: center;
+  width: 100%;
+}
+
+.pricing-plan .cta-button:hover {
+  background-color: #0056b3;
+}
+
+/* CTA Section */
+.cta {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #007bff;
+  color: white;
+}
+          
+        </style>
+        </head>
+        <body style="background-color: whitesmoke;">
+            <!-- Navbar with floated logo -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
+    <div class="container-fluid">
+      <!-- Logo floated left -->
+      <a class="navbar-brand float-start" href="#">
+        <img src="plogo1.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
+        ROLEX
+      </a>
+      <!-- Navbar Toggler for Mobile View -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Navbar Links -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="project20.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="project20a.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="project20b.html">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="project20d.html">Products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="project20e.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>  
+               <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1 class="display-4">Our Service</h1>
+      <p class="lead">Rolex is the quintessential quality timepices and iam extremely proud of my long time association with them.</p>
+    </div>
+  </section>
+<!-- Hero Section -->
+<section class="hero jack1">
+  <h1>Transform Your Business with Our Cutting-Edge Solutions</h1>
+  <p>Providing innovative services to boost efficiency and streamline operations.</p>
+  <a href="#contact" class="cta-button">Get Started</a>
+</section>
+
+<!-- About the Service Section -->
+<section id="about" class="about">
+  <h2>About Our Service</h2>
+  <p>Rolex, a Swiss luxury watch manufacturer is known for its commitment to quality, innovation and customer service with a focus on creating durable timeless time pieces and providing excellent after-sales care.rolex watch to be an ambassador for qulity to that end in addition to the care taken during the design and manufacturing of the watches he also set up effcient after -sales service for each country in which the brand was sold.</p><br>
+ <p>This initiative hass alowed Rolex to gurantee that wevery timepices leaving its workshpes can bemaintained to the highest standards and so preserve its excellent performance. As a result there is no limt on how long a rolex watche acn keep working and carry on being handed down from one generation to the next in order to live several lives.</p>
+</section>
+
+<!-- Features Section -->
+<section id="features" class="features">
+  <h2>Key Features</h2>
+  <div class="feature">
+    <h3>24/7 Customer Support</h3>
+    <p>We're here to help you anytime, anywhere.</p>
+  </div>
+  <div class="feature">
+    <h3>Easy Integration</h3>
+    <p>Seamlessly integrate with your existing systems.</p>
+  </div>
+  <div class="feature">
+    <h3>Scalable Solutions</h3>
+    <p>Our solutions grow with your business.</p>
+  </div>
+  <div class="feature">
+    <h3>High-Level Security</h3>
+    <p>Your data is safe with us. Always.</p>
+  </div>
+</section>
+
+<!-- Benefits Section -->
+<section class="benefits">
+  <h2>Benefits</h2>
+  <ul>
+    <li>Rolex chronometers for five generation -percision that is founded in a scientific understanding of time.</li>
+    <li>Rolex employs the ever -advancing frontier of human knowledge in the creation of its instruments.</li>
+    <li>Rolex supports individuals and oraganizations working across the sciences,believing.</li>
+    <li>Rolex watches are seens as universal tokens of success across cultures and industries originally crafted as high -end.</li>
+  </ul>
+</section>
+
+<!-- Testimonials Section -->
+<section class="testimonials">
+  <h2>What Our Clients Say</h2>
+  <P>There can be no watch house less in need of an introduction than Rolex Watches .It si a brand whose name echoes beyond the boundaries of our industry.</P>
+  <p>Rolex SA is the leading luxury watch manufacturer in the world producing over 1.05 million watches that generate sales of over 13$ billion dollars in 2022.</p>
+</section>
+
+
+<!-- Call to Action Section -->
+<section class="cta">
+  <h2>Ready to get started?</h2>
+  <a href="#contact" class="cta-button">Contact Us Today!</a>
+</section>
+  <!-- Footer Section -->
+  <footer class="footer text-center" style="background-color:gray; color:white;">
+    <p>&copy; 2025 Your Company. All rights reserved.</p>
+    <p>Follow us on <a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">LinkedIn</a></p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+        </body>
+        </html>
